@@ -4,4 +4,6 @@ from django.shortcuts import render
 from .models import Article
 
 def article_list(request):
-    return HttpResponse('Articles Homepage')
+    articles = Article.objects.all()
+    output = ' , '.join([str(article) for article in articles])
+    return HttpResponse(output)
