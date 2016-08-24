@@ -57,7 +57,7 @@ ROOT_URLCONF = 'apadron.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['apadron/templates',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
